@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <style>
+    /*Basic Reset */
+    .jumbotron{
+        text-align: center;
+        padding:  100px 20px;
+        background: #fff;
+    }
+    .slider{
+        width: 100px;
+        height: 450px;
+        object-fit: cover;
+    }
+    .slider img {
+        width: 10px;
+        height: 20px;
+        animation: slide 9s infinite;
+     }
+     body{
+        background-color: skyblue;
+     }
+    * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Arial', sans-serif;
+    }
+    /*Header*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background-color: #333;
+        color: skyblue;
+    }
+    header .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: skyblue;
+    }
+    header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    header nav ul li a {
+        color: skyblue;
+        text-decoration:none;
+        font-weight: bold;
+    }
+    header nav ul li a:hovar {
+        text-decoration: underline;
+    }
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.slider{
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:none;
+}
+
+.slide.active{
+    display:block;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    color:white;
+    background:rgba(0,0,0,0.4);
+    padding:30px;
+    border-radius:10px;
+}
+
+.content h1{
+    font-size:50px;
+ margin-bottom:10px;
+}
+
+.content p{
+    font-size:20px;
+    margin-bottom:15px;
+}
+
+button{
+    padding:10px 20px;
+    border:none;
+    cursor:pointer;
+}
+
+    /* Hero Section */
+    .hero {
+        text-align: center;
+        padding: 100px 20px;
+        background: url();
+        color: darkred;
+    }
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom:20px ;
+    }
+    .hero p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .hero .btn {
+        background-color: #ff6f61;
+        padding: 15px 30px;
+        color: skyblue;
+        text-decoration: none;
+        font-weight: bold;
+        border: 5px;
+    }
+    .hero.btn:hover {
+        background-color: #d63d2f;
+    }
+    /* products Section */
+    .products {
+        padding: 50px 20px;
+        text-align: center;
+    }
+    .products h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+    }
+    .product-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+    }
+    .product-card img {
+        width: 100%;
+        border-radius:5px;
+        margin-bottom: 15px;
+    }
+    .product-card h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .product-card p {
+        font-size: 18px;
+        margin-bottom: 15PX;
+        color: #FF6F61;
+    }
+    .product-card button {
+        padding: 10PX 20PX;
+        background-color: #333;
+        color: skyblue;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .product-card button:hover {
+        background-color: #555;
+    }
+    /* FOOTER */
+    footer {
+        background-color: #333;
+        color:skyblue;
+        text-align: center;
+        padding: 2OPX 0;
+    }
+    .slider{
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+    </style>
+</hea>
+<body bgcolor="pink">
+      <!--Header-->
+    <header>
+        <div class="logo">Home </div>
+        <nav>
+            <ul>
+                <li><a href="docment.html">Best Perfumes</a></li>
+                <li><a href="/man.html">men</a></li>
+                <li><a href="/woman.html">women</a></li>
+                <li><a href="/sale.html">Sale</a></li>
+               <li><a href="/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<br><br>
+    <!--roducts Section -->
+    <section class="jumbotron">
+        <h1>🌺Perfume Home Selection 🌸</h1>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://static-01.daraz.com.bd/p/dc6752c76ca74e7dc78d9c9513965af5.jpg" alt="Luxury Perfume">
+                <h3>"Fragrance that lingers in memories and adds a touch of elegance to every moment." ✨.</h3>
+                <p>$50.96</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1557170334-a9632e77c6e4?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="product 2">
+                <h3>"Unleash your charm with a scent that speaks elegance and confidence." 🌷 </h3>
+                <p>$28.58</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+          <img src="https://images.unsplash.com/photo-1613521140785-e85e427f8002?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <h3>Summer Collection Perfume is the invisble shield against bad vibes.</h3>
+          <p>$50.44</p>
+          <button>Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+          <img src="https://plus.unsplash.com/premium_photo-1661964363769-4a96114591a3?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <h3>Summer Collection Perfume is the invisble shield against bad vibes.</h3>
+          <p>$50.44</p>
+          <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://plus.unsplash.com/premium_photo-1726873234228-a511f8a05f1d?q=80&w=1012&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="product 2">
+                <h3>This floral fragrance is perfect for spring perfume is the final touch of style fragrance memories. </h3>
+                <p>$28.58</p>
+                <button>Add to Cart</button>
+            </div> 
+        </div>
+    </section><br><br>
+    <!--roducts Section -->
+    <section class="jumbotron">
+        <h1>🦋Summer  Collection⛹️‍♀️</h1>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="data:image/jpeg;base64,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" alt="Luxury Perfume">
+                <h3>"Fragrance that lingers in memories and adds a touch of elegance to every moment." ✨.</h3>
+                <p>$50.96</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkjEURVZNqIvULtRkS5hRe8dEjdnGOm1OEUw&s" alt="product 2">
+                <h3>"Unleash your charm with a scent that speaks elegance and confidence." 🌷 </h3>
+                <p>$28.58</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYA1OXZUzpTRWzfZOKi5Xe-fHu6PHse8ZL-g&s" alt="">
+          <h3>Summer Collection Perfume is the invisble shield against bad vibes.</h3>
+          <p>$50.44</p>
+          <button>Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+          <img src="https://i.pinimg.com/236x/a9/69/5f/a9695f8fe03d31d1d1b495a4cc99d6e5.jpg" alt="">
+          <h3>Summer Collection Perfume is the invisble shield against bad vibes.</h3>
+          <p>$50.44</p>
+          <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://img.kwcdn.com/product/fancy/88fad86b-9243-4c90-9ad7-c475d65c426a.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="product 2">
+                <h3>This floral fragrance is perfect for spring perfume is the final touch of style . </h3>
+                <p>$28.58</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer Start -->
+<footer class="bg-dengerous text-white text-center py-3 mt-3">
+<div class="container">
+<p class="mb-1">© 2026 My Best Perfume</p>
+
+<a href="#" class="text-white me-3">Home</a>
+<a href="#" class="text-white me-3">About</a>
+<a href="#" class="text-white">Contact</a>
+</div>
+ <p>made by sana@gmail.com</p>
+</footer>
+<!-- Footer End -->
+
+   
+  
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

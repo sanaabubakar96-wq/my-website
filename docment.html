@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Collapse Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    /*Basic Reset */
+    .jumptron{
+        text-align: center;
+        padding: 20px;
+        background: #fff;
+    }
+    .slider{
+        width: 100px;
+        height: 450px;
+        object-fit: cover;
+    }
+    .slider img {
+        width: 10px;
+        height: 20px;
+        animation: slide 9s infinite;
+     }
+     body{
+        background-color:skyblue ;
+     }
+    * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Arial', sans-serif;
+    }
+    /*Header*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        background-color: #333;
+        color: skyblue;
+    }
+    header .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+    header nav ul li a {
+        color: skyblue;
+        text-decoration:none;
+        font-weight: bold;
+    }
+    header nav ul li a:hovar {
+        text-decoration: underline;
+    }
+    /* Hero Section */
+    .hero {
+        text-align: center;
+        padding: 100px 20px;
+        background: url();
+        color: darkred;
+    }
+    .hero h1 {
+        font-size: 48px;
+        margin-bottom:10px ;
+    }
+    .hero p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .hero .btn {
+        background-color: #ff6f61;
+        padding: 10px 10px;
+        color: skyblue;
+        text-decoration: none;
+        font-weight: bold;
+        border: 1px;
+    }
+    .hero.btn:hover {
+        background-color: #d63d2f;
+    }
+    /* products Section */
+    .products {
+        padding: 50px 20px;
+        text-align: center;
+    }
+    .products h2 {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+    }
+    .product-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+    }
+    .product-card img {
+        width: 100%;
+        border-radius:5px;
+        margin-bottom: 15px;
+    }
+    .product-card h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .product-card p {
+        font-size: 18px;
+        margin-bottom: 15PX;
+        color: #FF6F61;
+    }
+    .product-card button {
+        padding: 10PX 20PX;
+        background-color: #333;
+        color: skyblue;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .product-card button:hover {
+        background-color: #555;
+    }
+    /* FOOTER */
+    footer {
+        background-color: #333;
+        color: skyblue;
+        text-align: center;
+        padding: 2OPX 0;
+    }
+    </style>
+<body>
+    <!--Header-->
+    <header>
+        <div class="logo">Best Perfumes </div>
+        <nav>
+            <ul>
+                <li><a href="/Home.html">Home</a></li>
+                <li><a href="/man.html">men</a></li>
+                <li><a href="/woman.html">women</a></li>
+                <li><a href="/sale.html">Sale</a></li>
+               <li><a href="/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Hore Section -->
+    <section class="hero">
+        <h1>Essence of Elegance</h1>
+        <p>🌺Discover Our Exclusive Perfume Collection-Crafted to Leave a Lasting Lmpression.🌷</p>
+        <h4>😊Luxury Fragrances for Every Mood, Every Moment.🌹</h4>
+        <div>
+        <a href="#" class="btn btn-dark">Explore Collection</a> </div>
+    </section>
+    <!--roducts Section -->
+    <section id="products" class="jumptron">
+        <h2>Our Collection</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOzXcLL94twKI7bdKNnmHdtPQivdvxE90vvA&s" alt="Luxury Perfume">
+                <h3>"Unleash your charm with a scent that speaks elegance and confidence." 🌷.</h3>
+                <p>$50.96</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFAeKhy7P_kmw4Kl3eOuA5kk1f-PUgtA_gxQ&s" alt="product 2">
+                <h3>P"Fragrance that lingers in memories and adds a touch of every moment." ✨ </h3>
+                <p>$28.58</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+          <img src="https://us.viktor-rolf.com/on/demandware.static/-/Sites-vr-master-catalog/default/dwfd1b8cbe/flowerbomb/vr_frag_2025_Flowerbomb_PRETTY_PEONY_PDP_eD2C_BTF_desktop_about_fragrance.jpg" alt="">
+          <h3>Summer Collection Perfume is the invisble shield against bad vibes.</h3>
+          <p>$50.44</p>
+          <button>Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+          <img src="https://png.pngtree.com/png-clipart/20250207/original/pngtree-elegant-pink-perfume-bottle-surrounded-by-roses-clipart-illustration-png-image_20385825.png"alt=""><br>
+          <br><br><br>
+          <h3>Summer Collection Perfume is the invisble shield against beautiful vibes.</h3>
+          <p>$50.44</p>
+          <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://pk.sapphireonline.pk/dw/image/v2/BKSB_PRD/on/demandware.static/-/Sites-sapphire-master-catalog/default/dwee94ea9e/images/April26/14thApril26/000000FPL001_1.jpg?sw=1000&sh=1200" alt="product 2">
+                <h3>This floral fragrance is perfect for spring perfume is the final touch of style for save memories. </h3>
+                <p>$28.58</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <!--roducts Section -->
+    <section id="products" class="jumptron">
+        <h2>Explore Collection</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://lumenor.ai/cdn-cgi/imagedelivery/F5KOmplEz0rStV2qDKhYag/15818188-3f61-4df8-56f2-20775ba77100/tn" alt="Luxury Perfume">
+                <h3>"Unleash your charm with a scent that speaks elegance and confidence." 🌷.</h3>
+                <p>$50.96</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://yi-ai.s3.eu-central-1.amazonaws.com/prod/19000/19712/2023/11/04-0090940-654645664a495.png" alt="product 2">
+                <h3>P"Fragrance that lingers in memories and adds a touch of every moment." ✨ </h3>
+                <p>$28.58</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+          <img src="https://assets.myntassets.com/assets/images/2026/APRIL/23/wtOnwubA_b305eef7951a44389ac8c2dd61f6605a.jpg" alt="">
+          <h3>Summer Collection Perfume is the invisble shield against beautiful vibes.</h3>
+          <p>$50.44</p>
+          <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://png.pngtree.com/background/20250129/original/pngtree-a-bottle-of-delicate-rose-colored-perfume-sits-amidst-pink-blossoms-picture-image_16041201.jpg" alt="product 2">
+                <h3>This floral fragrance is perfect for spring perfume is the final touch of style for save memories. </h3>
+                <p>$28.58</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+<!-- Footer Start -->
+<footer class="bg-dengerous text-white text-center py-3 mt-3">
+<div class="container">
+<p class="mb-1">© 2026 My Best Perfume</p>
+
+<a href="#" class="text-white me-3">Home</a>
+<a href="#" class="text-white me-3">About</a>
+<a href="#" class="text-white">Contact</a>
+</div>
+ <p>made by sana@gmail.com</p>
+</footer>
+<!-- Footer End -->
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
