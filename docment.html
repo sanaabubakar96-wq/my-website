@@ -7,134 +7,201 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <style>
-    /*Basic Reset */
-    .jumptron{
-        text-align: center;
-        padding: 20px;
-        background: #fff;
-    }
-    .slider{
-        width: 100px;
-        height: 450px;
-        object-fit: cover;
-    }
-    .slider img {
-        width: 10px;
-        height: 20px;
-        animation: slide 9s infinite;
-     }
-     body{
-        background-color:skyblue ;
-     }
-    * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Arial', sans-serif;
-    }
-    /*Header*/
+    
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff7fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 5%;
+    background-color: #333;
+    color: white;
+}
+
+header .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffc0cb;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ffc0cb;
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ffe4ec, #fff7fa);
+    color: #70243b;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #b83260;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+}
+
+.hero .btn:hover {
+    background-color: #872344;
+    color: white;
+}
+
+/* Products Section */
+.jumptron {
+    padding: 45px 5%;
+    text-align: center;
+    background-color: #fff;
+}
+
+.jumptron h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #70243b;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #f0dce3;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 4px 12px rgba(80, 30, 45, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(80, 30, 45, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #b83260;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-card button:hover {
+    background-color: #b83260;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffc0cb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 50px;
-        background-color: #333;
-        color: skyblue;
+        justify-content: center;
+        text-align: center;
     }
-    header .logo {
-        font-size: 24px;
-        font-weight: bold;
-    }
+
     header nav ul {
-        list-style: none;
-        display: flex;
-        gap: 20px;
+        justify-content: center;
+        gap: 12px;
     }
-    header nav ul li a {
-        color: skyblue;
-        text-decoration:none;
-        font-weight: bold;
-    }
-    header nav ul li a:hovar {
-        text-decoration: underline;
-    }
-    /* Hero Section */
+
     .hero {
-        text-align: center;
-        padding: 100px 20px;
-        background: url();
-        color: darkred;
+        padding: 55px 15px;
     }
-    .hero h1 {
-        font-size: 48px;
-        margin-bottom:10px ;
+
+    .jumptron {
+        padding: 30px 15px;
     }
-    .hero p {
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-    .hero .btn {
-        background-color: #ff6f61;
-        padding: 10px 10px;
-        color: skyblue;
-        text-decoration: none;
-        font-weight: bold;
-        border: 1px;
-    }
-    .hero.btn:hover {
-        background-color: #d63d2f;
-    }
-    /* products Section */
-    .products {
-        padding: 50px 20px;
-        text-align: center;
-    }
-    .products h2 {
-        font-size: 36px;
-        margin-bottom: 40px;
-    }
+
     .product-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 30px;
+        grid-template-columns: 1fr;
     }
-    .product-card {
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        padding: 20px;
-    }
-    .product-card img {
-        width: 100%;
-        border-radius:5px;
-        margin-bottom: 15px;
-    }
-    .product-card h3 {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    .product-card p {
-        font-size: 18px;
-        margin-bottom: 15PX;
-        color: #FF6F61;
-    }
-    .product-card button {
-        padding: 10PX 20PX;
-        background-color: #333;
-        color: skyblue;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-    }
-    .product-card button:hover {
-        background-color: #555;
-    }
-    /* FOOTER */
-    footer {
-        background-color: #333;
-        color: skyblue;
-        text-align: center;
-        padding: 2OPX 0;
-    }
+}
+
     </style>
 <body>
     <!--Header-->
