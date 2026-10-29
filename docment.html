@@ -243,6 +243,55 @@ footer a:hover {
     line-height: 1.6;
 }
 
+    
+/* Professional Footer */
+footer {
+    background-color: #70243b;
+    color: #ffffff;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+footer h4 {
+    color: #ffc0cb;
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #ffc0cb;
+    text-decoration: underline;
+}
+
+footer hr {
+    border-color: #ffffff;
+    opacity: 0.3;
+}
+
+@media (max-width: 600px) {
+    .footer-links {
+        gap: 12px;
+    }
+}
+
+
     </style>
 <body>
     <!--Header-->
@@ -347,20 +396,32 @@ footer a:hover {
     </section>
 
 
-<!-- Footer Start -->
-<footer class="bg-dengerous text-white text-center py-3 mt-3">
-<div class="container">
-<p class="mb-1">© 2026 My Best Perfume</p>
 
-<a href="#" class="text-white me-3">Home</a>
-<a href="#" class="text-white me-3">About</a>
-<a href="#" class="text-white">Contact</a>
-</div>
- <p>made by sana@gmail.com</p>
+<!-- Footer Start -->
+<footer class="text-center py-4 mt-4">
+    <div class="container">
+        <h4>Best Perfumes</h4>
+
+        <p>Discover a fragrance for every mood and moment.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="man.html">Men</a>
+            <a href="woman.html">Women</a>
+            <a href="sale.html">Sale</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+
+        <hr>
+
+        <p class="mb-1">
+            &copy; 2026 Best Perfumes. All rights reserved.
+        </p>
+
+        <p>Made by Sana</p>
+    </div>
 </footer>
 <!-- Footer End -->
-    
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
